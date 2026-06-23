@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Dầu dừa Lành - Câu chuyện thương hiệu</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f1f14;
+    color: white;
+    line-height: 1.7;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../images/nau\ dau\ dua.jpg) center/cover no-repeat;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero p {
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+.video-box{
+    max-width: 900px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+}
+
+.video-box video{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* SECTION */
+.section {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* TIMELINE STYLE */
+.timeline {
+    border-left: 2px solid #66bb6a;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.block {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.block::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #66bb6a;
+    position: absolute;
+    left: -26px;
+    top: 8px;
+    border-radius: 50%;
+}
+
+/* QUOTE */
+.quote {
+    font-style: italic;
+    color: #a5d6a7;
+    border-left: 3px solid #66bb6a;
+    padding-left: 12px;
+    margin: 15px 0;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1b3a22;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #66bb6a;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="../index.html/Lanh.html">Trang chủ</a>
+    <a href="../gioithieu/gioi thieu.html">Giới thiệu</a>
+    <a href="../san pham/san pham.html">Sản phẩm</a>
+    <a href="../lien he/lien he.html">Liên hệ</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Dầu dừa Lành</h1>
+    <p>Một hành trình từ ký ức tuổi thơ đến thương hiệu mang giá trị Việt</p>
+</div>
+
+<!-- CHÈN VIDEO NGAY TẠI ĐÂY -->
+<div class="video-box">
+    <video controls>
+        <source src="../video/video cau chuyen.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- STORY -->
+<div class="section">
+<!-- STORY -->
+<div class="section">
+
+    <h2>Khởi nguồn</h2>
+    <div class="timeline">
+
+        <div class="block">
+            <h3>Tuổi thơ bên căn bếp nhỏ</h3>
+            <p>
+                Dầu dừa Lành bắt đầu từ căn bếp nhỏ ở Bến Tre, nơi người bà lặng lẽ tạo ra từng mẻ dầu dừa thủ công.
+            </p>
+        </div>
+
+        <div class="block">
+            <h3>Những ký ức không thể quên</h3>
+            <p>
+    Tiếng củi cháy, mùi dầu dừa thơm dịu và câu nói: 
+                <span class="quote">“Chỉ cần làm bằng cái tâm, mọi thứ sẽ trở nên tốt lành.”</span>
+            </p>
+        </div>
+
+        <div class="block">
+            <h3>Hành trình trưởng thành</h3>
+            <p>
+                Rời quê hương để theo đuổi ước mơ, nhưng ký ức về căn bếp vẫn luôn ở lại.
+            </p>
+        </div>
+
+        <div class="block">
+            <h3>Ngày trở về</h3>
+            <p>
+                Khi trở về, căn bếp vẫn còn đó… nhưng người bà không còn ngồi bên bếp lửa.
+            </p>
+
+            <p class="quote">
+                Đó là lúc tôi hiểu rằng mình cần giữ lại không chỉ dầu dừa, mà cả ký ức.
+            </p>
+        </div>
+
+        <div class="block">
+            <h3>Dầu dừa Lành ra đời</h3>
+            <p>
+                Từ đó, thương hiệu “Lành” được tạo ra – kết hợp giữa truyền thống và hiện đại.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>Mỗi giọt dầu – một ký ức được gìn giữ</h2>
+    <a href="../san pham/san pham.html">Khám phá sản phẩm</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Sản phẩm dầu dừa</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f6f5;
+}
+
+/* MENU */
+nav {
+    background: #2e7d32;
+    padding: 12px;
+
+    display: flex;
+    justify-content: center;  /* CĂN GIỮA NGANG */
+    gap: 20px;                /* khoảng cách giữa các mục */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 26px;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* ẢNH NHỎ LẠI */
+.card img {
+    width: 150px;        /* QUAN TRỌNG: không cho full width */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.card h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html/Lanh.html">Trang chủ</a>
+    <a href="../gioithieu/gioi thieu.html">Giới thiệu</a>
+    <a href="../san pham/san pham.html">Sản phẩm</a>
+    <a href="../lien he/lien he.html">Liên hệ</a>
+</nav>
+
+<h1>Sản phẩm dầu dừa nguyên chất</h1>
+
+<div class="container">
+
+    <!-- 250ML -->
+    <div class="card">
+        <img src="../images/dau dua 250ml.jpg" alt="250ml">
+
+        <h3>Dầu dừa 250ml</h3>
+        <p>Dùng cá nhân, dưỡng tóc và da.</p>
+        <b>90.000đ</b><br>
+
+        <a class="btn" href="../lien he/lien he.html">Mua ngay</a>
+    </div>
+
+    <!-- 500ML -->
+    <div class="card">
+        <img src="../images/dau dua 500ml.jpg" alt="500ml">
+
+        <h3>Dầu dừa 500ml</h3>
+        <p>Dùng lâu dài, tiết kiệm hơn.</p>
+        <b>160.000đ</b><br>
+
+        <a class="btn" href="../lien he/lien he.html">Mua ngay</a>
+    </div>
+
+</div>
+
+</body>
+</html>

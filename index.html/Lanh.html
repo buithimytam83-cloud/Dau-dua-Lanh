@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../CSS/Style 1.css">
+<title>Lành - Dầu Dừa Ép Lạnh Nguyên Chất</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+  <div class="logo">
+    <img src="../images/logo lanh.png" alt="">
+    Lành
+  </div>
+
+  <nav>
+    <ul>
+  
+    <li>  <a href="../index.html/Lanh.html">Trang chủ</a> </li>
+    <li> <a href="../gioithieu/gioi thieu.html">Giới thiệu</a></li>
+
+    <li>  <a href="../san pham/san pham.html">Sản phẩm</a> </li>
+    <li>  <a href="../lien he/lien he.html">Liên hệ</a> </li>
+      
+    </ul>
+  </nav>
+
+  <!-- SEARCH -->
+  <div class="search">
+  <i class="fa fa-search" onclick="toggleSearch()"></i>
+
+  <div class="search-box" id="searchBox">
+    <input type="text" placeholder="Tìm sản phẩm...">
+  </div>
+</div>
+<script>
+function toggleSearch(){
+  const box = document.getElementById("searchBox");
+  box.classList.toggle("active");
+}
+</script>
+
+  <!-- ICON CART -->
+ <div class="cart">
+    🛒 Giỏ hàng: <span id="cart-count">0</span>
+</div>
+  <a href="../lien he/lien he.html" class="btn">Mua ngay</a>
+</div>
+</header>
+<section class="banner-section">
+    <img src="../images/BANNER WEB NGANG.jpg" alt="Banner Dầu Dừa Lành">
+</section>
+
+<div class="hero-buttons">
+<a href="../lien he/lien he.html" class="btn">Mua Ngay</a>
+<a href="../gioithieu/gioi thieu.html" class="btn-outline">Tìm Hiểu Thêm</a>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+   
+<section class="products container">
+
+  <h2>Sản Phẩm Nổi Bật</h2>
+
+<div class="grid-3">
+
+    <div class="product-card">
+      <img src="../images/dau dua 250ml.jpg" alt="">
+      <h3>Dầu Dừa Lành 250ml</h3>
+      <p>Dầu dừa ép lạnh nguyên chất.</p>
+      <div class="price">79.000 VNĐ</div>
+      <button class="btn" onclick="addToCart('250ml', 99000)">Thêm vào giỏ</button>
+    </div>
+
+    <div class="product-card">
+      <img src="../images/dau dua 500ml.jpg" alt="">
+      <h3>Dầu Dừa Lành 500ml</h3>
+      <p>Dầu dừa ép lạnh nguyên chất.</p>
+      <div class="price">159.000 VNĐ</div>
+      <button class="btn" onclick="addToCart('500ml', 159000)">Thêm vào giỏ</button>
+    </div>
+
+  
+  </div>
+  </section>
+
+
+<section class="about container">
+
+<div class="about-img">
+<img src="../images/banner ngang.png" alt="">
+</div>
+
+<div class="about-text">
+
+<h2>Câu Chuyện Thương Hiệu Lành</h2>
+
+<p>
+Bắt nguồn từ ký ức tuổi thơ bên căn bếp nhỏ của người bà ở Bến Tre,
+Dầu dừa Lành mang trong mình hương vị quê hương và những giá trị
+truyền thống được gìn giữ qua nhiều thế hệ.
+</p>
+
+<p>
+Chúng tôi tin rằng mỗi giọt dầu dừa không chỉ là món quà từ thiên nhiên,
+mà còn là sự kết nối của tình yêu gia đình, sự chân thành và những điều tốt lành.
+Từ nguồn dừa tuyển chọn tại Bến Tre, Lành tạo nên sản phẩm dầu dừa ép lạnh
+nguyên chất, mang đến giải pháp chăm sóc sức khỏe và sắc đẹp một cách tự nhiên.
+</p>
+
+<a href="../Câu chuyện/cau chuyen.html" class="btn">Khám Phá Câu Chuyện</a>
+
+</div>
+
+</section>
+<section class="core-values">
+  <div class="container">
+
+    <h2>Giá Trị Cốt Lõi</h2>
+    <p class="sub">Nền tảng tạo nên thương hiệu dầu dừa Lành</p>
+
+    <div class="core-layout">
+
+      <!-- FEATURED -->
+      <div class="core-featured">
+        <div class="icon">🌿</div>
+        <h3>An toàn & Tự nhiên</h3>
+        <p>
+          100% nguyên chất, ép lạnh, không hóa chất, không chất bảo quản, không pha trộn.
+          Đặt an toàn người dùng lên hàng đầu trong từng giọt dầu.
+        </p>
+      </div>
+
+      <!-- GRID -->
+      <div class="core-grid">
+
+        <div class="core-item">
+          <div class="icon">🔍</div>
+          <h3>Chân thật</h3>
+          <p>Nguồn gốc minh bạch, truy xuất rõ ràng từ vùng trồng địa phương.</p>
+        </div>
+
+        <div class="core-item">
+          <div class="icon">🤝</div>
+          <h3>Tận tâm</h3>
+          <p>Lấy khách hàng làm trung tâm, chăm sóc bằng giá trị thật.</p>
+        </div>
+
+        <div class="core-item">
+          <div class="icon">🌾</div>
+          <h3>Gắn kết cộng đồng</h3>
+          <p>Hỗ trợ nông dân địa phương, phát triển kinh tế bền vững.</p>
+        </div>
+
+        <div class="core-item">
+          <div class="icon">✨</div>
+          <h3>Tinh tế truyền thống</h3>
+          <p>Kết hợp ép lạnh truyền thống và tiêu chuẩn hiện đại.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+
+    <h2>Tại Sao Chọn Lành?</h2>
+    <p class="sub">5 cam kết tạo nên chất lượng thật</p>
+
+    <div class="features-line">
+
+      <div class="feature-step">
+        <div class="circle">1</div>
+        <h3>100% Nguyên Chất</h3>
+        <p>Không pha trộn, không hóa chất.</p>
+      </div>
+
+      <div class="feature-step">
+        <div class="circle">2</div>
+        <h3>Ép Lạnh</h3>
+        <p>Giữ trọn dưỡng chất tự nhiên.</p>
+      </div>
+
+      <div class="feature-step">
+        <div class="circle">3</div>
+        <h3>An Toàn</h3>
+        <p>Không chất bảo quản.</p>
+      </div>
+
+      <div class="feature-step">
+        <div class="circle">4</div>
+        <h3>Dừa Bến Tre</h3>
+        <p>Nguyên liệu địa phương chọn lọc.</p>
+      </div>
+
+      <div class="feature-step">
+        <div class="circle">5</div>
+        <h3>Chuẩn Quốc Tế</h3>
+        <p>ISO & HACCP kiểm định chất lượng.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>100% Dầu Dừa Ép Lạnh Đến Từ Bến Tre</h2>
+    <a href="../lien he/lien he.html" class="btn">Mua ngay hôm nay</a>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="container">
+    <h2>Hành Trình Từ Dừa Bến Tre</h2>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="../images/dua.jpg" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="../images/quy trinh 1.jpg" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="../images/quy trinh 2.jpg" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="../images/quy trinh 3.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="benefits-premium">
+
+  <div class="container">
+
+    <h2>Công Dụng Nổi Bật</h2>
+    <p class="sub">Một sản phẩm – nhiều giải pháp chăm sóc tự nhiên</p>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card">
+        <div class="icon">💆‍♀️</div>
+        <h3>Dưỡng tóc chuyên sâu</h3>
+        <p>Phục hồi tóc khô xơ, giảm gãy rụng, giúp tóc bóng mượt tự nhiên.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">✨</div>
+        <h3>Dưỡng da tự nhiên</h3>
+        <p>Cấp ẩm nhẹ nhàng, giúp da mềm mại mà không gây bít tắc.</p>
+      </div>
+
+      <div class="benefit-card highlight">
+        <div class="icon">🥥</div>
+        <h3>100% ép lạnh nguyên chất</h3>
+        <p>Không pha trộn – giữ trọn dưỡng chất từ dừa Bến Tre.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">💋</div>
+        <h3>Dưỡng môi mềm mịn</h3>
+        <p>Giảm khô nứt môi, giúp môi luôn căng mướt tự nhiên.</p>
+      </div>
+
+    </div>
+
+  </div>
+  </section>
+
+<section class="storage">
+  <div class="container">
+
+    <h2>Cách Bảo Quản Dầu Dừa Lành</h2>
+    <p class="sub">Giữ trọn tinh khiết tự nhiên trong từng giọt dầu</p>
+
+    <div class="storage-grid">
+
+      <div class="storage-card">
+        <div class="icon">🌿</div>
+        <h3>Nơi khô ráo</h3>
+        <p>Bảo quản nơi thoáng mát, tránh ánh nắng trực tiếp.</p>
+      </div>
+
+      <div class="storage-card">
+        <div class="icon">🧴</div>
+        <h3>Đóng kín sau dùng</h3>
+        <p>Luôn đậy nắp để giữ chất lượng và độ tinh khiết.</p>
+      </div>
+
+      <div class="storage-card">
+        <div class="icon">🌡️</div>
+        <h3>Nhiệt độ ổn định</h3>
+        <p>Tránh nơi quá nóng hoặc quá lạnh gây biến đổi dầu.</p>
+      </div>
+
+      <div class="storage-card">
+        <div class="icon">⏳</div>
+        <h3>Sử dụng đúng hạn</h3>
+        <p>Tốt nhất trong 12–24 tháng sau khi mở nắp.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+</section>
+<section class="trust">
+  <div class="container">
+    <h2>Khách hàng tin dùng</h2>
+    <div class="grid-3">
+
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>Dầu thơm tự nhiên, dùng rất thích.</p>
+      </div>
+
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>Tóc mềm hơn sau 1 tuần.</p>
+      </div>
+
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>Rất an toàn cho da nhạy cảm.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="faq-premium" id="faq">
+  <div class="faq-container">
+    <h2>Câu Hỏi Thường Gặp</h2>
+    <p class="faq-subtitle">
+      Giải đáp những thắc mắc phổ biến về Dầu Dừa Lành
+    </p>
+
+    <div class="faq-card">
+      <button class="faq-question">
+        Dầu dừa Lành có dùng cho da nhạy cảm không?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        Có. Dầu dừa Lành được ép lạnh 100% nguyên chất, không chứa hóa chất hay chất bảo quản nên phù hợp với nhiều loại da, kể cả da nhạy cảm.
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="faq-question">
+        Sản phẩm bảo quản được bao lâu?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        Sản phẩm có hạn sử dụng 12 tháng nếu bảo quản nơi khô ráo, tránh ánh nắng trực tiếp.
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="faq-question">
+        Dầu dừa có thể dùng để nấu ăn không?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        Có. Dầu dừa Lành có thể dùng trong chế biến món ăn hoặc làm nguyên liệu cho đồ uống healthy.
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="faq-question">
+        Dầu dừa Lành có những công dụng gì?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        Dầu dừa giúp dưỡng môi, dưỡng tóc, dưỡng ẩm da, massage thư giãn và hỗ trợ nấu ăn.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="benefits">
+
+<div class="container">
+<div class="footer">
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <img src="../images/logo lanh.png" alt="Lành">
+
+      <p class="slogan">Gói Trọn Giọt Lành</p>
+
+      <p>
+        Dầu dừa ép lạnh nguyên chất từ Bến Tre,
+        mang đến sự thuần khiết cho sức khỏe & sắc đẹp.
+      </p>
+
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+      <h4>Khám Phá</h4> 
+      <a href="../index.html/Lanh.html">Trang chủ</a>
+      <a href="../gioithieu/gioi thieu.html">Giới thiệu</a>
+      <a href="../san pham/">Sản phẩm</a>
+      <a href="../lien he/lien he.html">Liên hệ</a>
+    </div>
+
+    <!-- CONTACT + MAP -->
+    <div class="footer-contact">
+      <h4>Liên hệ</h4>
+
+      <p>📧 daudualanh@gmail.com</p>
+      <p>📍 TP.HCM, Việt Nam</p>
+
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13181.016923836309!2d106.75936201826796!3d10.83121535523069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527019bbdec6f%3A0x3198968c59380d1c!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1781854147104!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p> Báo cáo môn Xây dựng kế hoạch Digital Marketing</p>
+    © 2026 Lành Coconut Oil | Crafted with Nature 🌿
+  </div>
+
+</footer>
+
+
+
+</div>
+<script>
+const elements = document.querySelectorAll('.core-item, .core-featured');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<script>
+let cartCount = 0;
+
+function addToCart() {
+    cartCount++;
+    document.getElementById("cart-count").innerText = cartCount;
+    alert("Đã thêm sản phẩm vào giỏ!");
+}
+</script>
+
+<script>
+const faqCards = document.querySelectorAll(".faq-card");
+
+faqCards.forEach(card => {
+    card.querySelector(".faq-question").addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+});
+</script>
+
+
+</body>
+</html>
