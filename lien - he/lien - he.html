@@ -6,7 +6,7 @@
 
 <style>
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     background: #eef2ee;
 }
@@ -64,19 +64,8 @@ nav a {
 
 /* INFO */
 .info {
-    margin: 10px 0;
-}
-
-/* BUTTON ZALO */
-.zalo-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 14px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    margin: 15px 0;
+    font-size: 16px;
 }
 
 /* MAP */
@@ -87,26 +76,70 @@ iframe {
     border-radius: 12px;
 }
 
-/* CALL BUTTON (FLOATING) */
-.call-btn {
+/* GOOGLE FORM AREA */
+.form-container {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.form-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.form-card h2 {
+    color: #1b5e20;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.form-card p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.form-iframe {
+    width: 100%;
+    height: 650px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* MESSENGER BUTTON (FLOATING) */
+.messenger-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-
-    background: #e53935;
-    color: white;
-    padding: 12px 16px;
-    border-radius: 50px;
-
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
     text-decoration: none;
     font-weight: bold;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 999;
+    color: #333333;
+    font-size: 15px;
 }
 
-.call-btn:hover {
-    background: #c62828;
+.messenger-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.messenger-svg {
+    width: 28px;
+    height: 28px;
+    fill: url(#messenger-gradient-page);
+    flex-shrink: 0;
 }
 </style>
 
@@ -134,29 +167,43 @@ iframe {
     <!-- CONTACT INFO -->
     <div class="card">
         <h2>Thông tin liên hệ</h2>
-
         <div class="info">📞 Hotline: 0976 471 919</div>
         <div class="info">💬 Zalo: 0976 471 919</div>
-        <div class="info">📍 TP.HCM</div>
-
-       
+    <div class="info">📍 TP.HCM</div>
     </div>
 
     <!-- MAP -->
     <div class="card">
         <h2>Vị trí cửa hàng</h2>
-
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13181.016923836309!2d106.75936201826796!3d10.83121535523069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527019bbdec6f%3A0x3198968c59380d1c!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1781854147104!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          loading="lazy">
-        </iframe>
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13181.016923836309!2d106.75936201826796!3d10.83121535523069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527019bbdec6f%3A0x3198968c59380d1c!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1781854147104!5m2!1svi!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 </div>
 
-<!-- CALL BUTTON -->
-<a class="call-btn" href="tel: 0976 471 919">
-    📞 Gọi ngay
+<!-- CHỨC NĂNG 3: NHÚNG GOOGLE FORM TƯ VẤN -->
+<div class="form-container">
+    <div class="form-card">
+        <h2>Đăng Ký Nhận Tư Vấn & Ưu Đãi</h2>
+        <p>Để lại thông tin dưới đây, Đồ Bé Xinh CoZy sẽ gửi tặng bạn Mã giảm giá 10% tại Shopee và liên hệ hỗ trợ bạn ngay nhé!</p>
+        
+        <!-- BẠN HÃY THAY ĐƯỜNG LINK GOOGLE FORM CỦA BẠN VÀO TRONG THẺ SRC DƯỚI ĐÂY -->
+        <iframe class="form-iframe" src="https://forms.gle/zpkqAtmDcYTyKHvU7">Đang tải biểu mẫu...</iframe>
+    </div>
+</div>
+
+<!-- CHỨC NĂNG 2: NÚT CHAT MESSENGER CỐ ĐỊNH -->
+<a class="messenger-btn" href="https://m.me/61591001997303" target="_blank">
+    <svg class="messenger-svg" viewBox="0 0 24 24">
+        <defs>
+            <linearGradient id="messenger-gradient-page" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#0099FF" />
+                <stop offset="60%" style="stop-color:#A033FF" />
+                <stop offset="100%" style="stop-color:#FF5280" />
+            </linearGradient>
+        </defs>
+        <path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.14.19.14.3.37.29.61l-.07 2.15c-.02.58.57.99 1.09.73l2.39-1.21c.19-.1.42-.11.62-.05 1.15.34 2.37.53 3.65.53 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.07 12.3l-2.48-2.65-4.83 2.65 5.3-5.63 2.53 2.65 4.78-2.65-5.3 5.63z"/>
+    </svg>
+    <span>Nhắn tin liên hệ ngay</span>
 </a>
 
 </body>

@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dầu Dừa Lành - Dầu Dừa Ép Lạnh Nguyên Chất Bến Tre</title>
+    <!-- TỐI ƯU TIÊU ĐỀ: Chứa từ khóa thương hiệu + từ khóa sản phẩm chính -->
+    <title>Lành - Dầu Dừa Ép Lạnh Nguyên Chất Bến Tre Chính Hãng</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Dầu dừa ép lạnh nguyên chất từ Bến Tre, chăm sóc tóc, da và môi an toàn từ thiên nhiên.">
-    <meta name="keywords" content="dầu dừa ép lạnh, dầu dừa nguyên chất, dầu dừa Bến Tre, dầu dừa dưỡng tóc, dầu dừa dưỡng da">
+    <!-- SEO ONPAGE -->
+    <!-- Thêm các từ khóa dài/nhu cầu vào phần mô tả để tăng tỷ lệ click -->
+    <meta name="description" content="Dầu dừa Lành cung cấp dầu dừa ép lạnh nguyên chất từ Bến Tre. Giải pháp tự nhiên giúp dưỡng tóc giảm gãy rụng, trị rạn da và dưỡng da an toàn, tinh khiết.">
+    <!-- Phân tách bộ từ khóa ngắn, dài và thương hiệu rõ ràng bằng dấu phẩy -->
+    <meta name="keywords" content="dầu dừa lành, dầu dừa ép lạnh, dầu dừa nguyên chất, dầu dừa ép lạnh dưỡng tóc, dầu dừa trị rạn da, dầu dừa bến tre, lành coconut oil">
     <meta name="author" content="Nhóm Dầu Dừa Lành">
 
-    <!-- Open Graph (Facebook Preview) -->
-    <meta property="og:title" content="Dầu Dừa Lành - Dầu Dừa Ép Lạnh Nguyên Chất">
-    <meta property="og:description" content="Dầu dừa ép lạnh nguyên chất từ Bến Tre, an toàn cho tóc, da và môi.">
+    <!-- Open Graph (Facebook Preview - Hiển thị cực đẹp khi bấm nút chia sẻ Facebook ở Chức năng 4) -->
+    <meta property="og:title" content="Lành - Dầu Dừa Ép Lạnh Nguyên Chất Bến Tre">
+    <meta property="og:description" content="Khám phá dầu dừa ép lạnh tinh khiết từ thiên nhiên giúp dưỡng tóc, dưỡng da và bảo vệ sức khỏe toàn diện.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo lanh.png"> <!-- Thêm dòng này để khi chia sẻ lên FB nó tự hiện kèm Logo của Lành -->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./CSS/Style 1.css">
@@ -65,19 +69,39 @@ function toggleSearch(){
 }
 </script>
 
-  <!-- ICON CART -->
- <div class="cart">
-    🛒 Giỏ hàng: <span id="cart-count">0</span>
+ <!-- ICON CART: Đã biến thành nút bấm sang xịn mịn -->
+<div class="cart" onclick="openCart()" style="
+    cursor: pointer; 
+    background-color: #5f9a74; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    font-weight: 500; 
+    font-family: 'Be Vietnam Pro', Arial, sans-serif;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(95, 154, 116, 0.2);
+    font-size: 14px;
+" onmouseover="this.style.backgroundColor='#4a7c5d'; this.style.transform='scale(1.05)';" onmouseout="this.style.backgroundColor='#5f9a74'; this.style.transform='scale(1)';">
+    
+    <i class="fa-solid fa-bag-shopping" style="font-size: 16px;"></i>
+    <span>Giỏ hàng</span>
+    
+    <span id="cart-count" style="background: #ee4d2d; color: white; padding: 2px 7px; border-radius: 50%; font-size: 11px; font-weight: bold; margin-left: 2px;">0</span>
 </div>
-  <a href="./lien - he/lien - he.html" class="btn">Mua ngay</a>
-</div>
+
 </header>
+
+<!-- Thêm tiêu đề H1 chuẩn SEO cho trang chủ Lành -->
+<h1 style="text-align: center; color: #5f9a74; font-family: 'Playfair Display', serif; margin-top: 30px; font-size: 28px;">Lành - Dầu Dừa Ép Lạnh Nguyên Chất Bến Tre</h1>
 <section class="banner-section">
     <img src="./images/BANNER WEB NGANG.jpg" alt="Banner Dầu Dừa Lành">
 </section>
 
 <div class="hero-buttons">
-<a href="./lien - he/lien - he.html" class="btn">Mua Ngay</a>
+<a href="https://shopee.vn/dobexinhcozy" class="btn">Mua Ngay</a>
 <a href="./gioi - thieu/gioi - thieu.html" class="btn-outline">Tìm Hiểu Thêm</a>
 </div>
 
@@ -91,29 +115,29 @@ function toggleSearch(){
    
 <section class="products container">
 
-  <h2>Sản Phẩm Nổi Bật</h2>
+  <h2>Sản Phẩm Dầu Dừa Ép Lạnh Nổi Bật</h2>
 
-<div class="grid-3">
+  <div class="grid-3">
 
     <div class="product-card">
-      <img src="./images/dau dua 250ml.jpg" alt="">
+      <img src="./images/dau dua 250ml.jpg" alt="Dầu Dừa Lành 250ml">
       <h3>Dầu Dừa Lành 250ml</h3>
       <p>Dầu dừa ép lạnh nguyên chất.</p>
+      <!-- Đồng bộ giá hiển thị và giá truyền vào hàm (79.000 VNĐ) -->
       <div class="price">79.000 VNĐ</div>
-      <button class="btn" onclick="addToCart('250ml', 99000)">Thêm vào giỏ</button>
+      <button class="btn" onclick="addToCart('250ml', 79000)">Thêm vào giỏ</button>
     </div>
 
     <div class="product-card">
-      <img src="./images/dau dua 500ml.jpg" alt="">
+      <img src="./images/dau dua 500ml.jpg" alt="Dầu Dừa Lành 500ml">
       <h3>Dầu Dừa Lành 500ml</h3>
       <p>Dầu dừa ép lạnh nguyên chất.</p>
       <div class="price">159.000 VNĐ</div>
       <button class="btn" onclick="addToCart('500ml', 159000)">Thêm vào giỏ</button>
     </div>
 
-  
   </div>
-  </section>
+</section>
 
 
 <section class="about container">
@@ -245,7 +269,7 @@ nguyên chất, mang đến giải pháp chăm sóc sức khỏe và sắc đẹ
 <section class="cta-banner">
   <div class="container">
     <h2>100% Dầu Dừa Ép Lạnh Đến Từ Bến Tre</h2>
-    <a href="./lien - he/lien - he.html" class="btn">Mua ngay hôm nay</a>
+    <a href="https://shopee.vn/dobexinhcozy" class="btn">Mua ngay hôm nay</a>
   </div>
 </section>
 
@@ -279,9 +303,8 @@ nguyên chất, mang đến giải pháp chăm sóc sức khỏe và sắc đẹ
 
   <div class="container">
 
-    <h2>Chức Năng Nổi Bật</h2>
-    <p class="sub">Một sản phẩm – nhiều giải pháp chăm sóc tự nhiên</p>
-
+    <h2>Công Dụng Nổi Bật Từ Dầu Dừa Lành</h2>
+    <p class="sub">Giải pháp tự nhiên giúp dưỡng tóc giảm gãy rụng và hỗ trợ trị rạn da an toàn</p>
     <div class="benefits-grid">
 
       <div class="benefit-card">
@@ -436,16 +459,88 @@ nguyên chất, mang đến giải pháp chăm sóc sức khỏe và sắc đẹ
 <div class="container">
 <div class="footer">
 
-<footer class="footer">
 
-  <div class="container footer-grid">
+
+
+
+</div>
+<script>
+const elements = document.querySelectorAll('.core-item, .core-featured');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+
+
+
+<!-- Nút Chat Messenger gồm cả Icon và Chữ cố định góc màn hình -->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 999999;">
+    <a href="https://m.me/61591001997303" target="_blank" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 30px; background: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: all 0.3s ease; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; color: #333333; font-size: 15px;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.15)';">
+        <!-- SVG Icon Messenger đổi màu chuẩn -->
+        <svg viewBox="0 0 24 24" style="width: 28px; height: 28px; fill: url(#messenger-text-gradient); flex-shrink: 0;">
+            <defs>
+                <linearGradient id="messenger-text-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#0099FF" />
+                    <stop offset="60%" style="stop-color:#A033FF" />
+                    <stop offset="100%" style="stop-color:#FF5280" />
+                </linearGradient>
+            </defs>
+            <path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.14.19.14.3.37.29.61l-.07 2.15c-.02.58.57.99 1.09.73l2.39-1.21c.19-.1.42-.11.62-.05 1.15.34 2.37.53 3.65.53 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.07 12.3l-2.48-2.65-4.83 2.65 5.3-5.63 2.53 2.65 4.78-2.65-5.3 5.63z"/>
+        </svg>
+        <!-- Chữ hiển thị cạnh Icon -->
+        <span>Nhắn tin liên hệ ngay</span>
+    </a>
+</div>
+
+
+
+<!-- BẮT ĐẦU VÙNG LIỀN MẠCH: KHỐI CHỨC NĂNG 4 ĐÃ ĐƯỢC ĐƯA VÀO TRONG FOOTER -->
+<footer class="footer" style="clear: both; display: block; padding-top: 0 !important; position: relative; z-index: 999;">
+
+  <!-- KHỐI CHỨC NĂNG 4 NẰM TRỌN TRONG FOOTER ĐỂ CHỐNG ĐÈ -->
+  <div style="max-width: 1000px; margin: 0 auto; padding: 40px 20px 20px 20px; font-family: Arial, sans-serif; box-sizing: border-box;">
+      <div style="background: white; padding: 30px 20px; border-radius: 14px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center;">
+          <h3 style="color: #5f9a74; margin-top: 0; margin-bottom: 15px; font-size: 18px;">🛒 MUA SẮM ĐA NỀN TẢNG & CHIA SẺ</h3>
+          <p style="color: #666666; margin-bottom: 20px; font-size: 14px;">Ghé thăm gian hàng chính hãng hoặc chia sẻ website này đến bạn bè nhé!</p>
+          
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+              <!-- Link Shopee của Đồ Bé Xinh CoZy -->
+              <a href="https://shopee.vn/dobexinhcozy" target="_blank" style="background: linear-gradient(135deg, #ff5722, #ee4d2d); color: white; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: bold; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(238, 77, 45, 0.25); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                  <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
+                      <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                  </svg>
+                  <span>Gian hàng Shopee</span>
+              </a>
+
+              <!-- Nút Chia sẻ -->
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://buithimytam83-cloud.github.io/index.html" target="_blank" style="background: linear-gradient(135deg, #1877f2, #166fe5); color: white; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: bold; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.25); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                  <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+
+          <span>Chia sẻ lên Facebook</span>
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- PHẦN NỘI DUNG GỐC CỦA FOOTER -->
+  <div class="container footer-grid" style="padding-top: 20px;">
 
     <!-- BRAND -->
     <div class="footer-brand">
       <img src="./images/logo lanh.png" alt="Lành">
-
       <p class="slogan">Gói Trọn Giọt Lành</p>
-
       <p>
         Dầu dừa ép lạnh nguyên chất từ Bến Tre,
         mang đến sự thuần khiết cho sức khỏe & sắc đẹp.
@@ -470,65 +565,130 @@ nguyên chất, mang đến giải pháp chăm sóc sức khỏe và sắc đẹ
     <!-- CONTACT + MAP -->
     <div class="footer-contact">
       <h4>Liên hệ</h4>
-
       <p>📧 daudualanh@gmail.com</p>
       <p>📍 TP.HCM, Việt Nam</p>
 
       <div class="map-box">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13181.016923836309!2d106.75936201826796!3d10.83121535523069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527019bbdec6f%3A0x3198968c59380d1c!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1781854147104!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          loading="lazy">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13181.016923836309!2d106.75936201826796!3d10.83121535523069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527019bbdec6f%3A0x3198968c59380d1c!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1781854147104!5m2!1svi!2s" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p> Báo cáo môn Xây dựng kế hoạch Digital Marketing</p>
+    <p>Báo cáo môn Xây dựng kế hoạch Digital Marketing</p>
     © 2026 Lành Coconut Oil | Crafted with Nature 🌿
   </div>
 
 </footer>
+<!-- KẾT THÚC VÙNG FOOTER -->
 
+<!-- CỤM GIỎ HÀNG TOÀN DIỆN: ĐẶT NGAY TRÊN THẺ /BODY -->
 
-
+<!-- 1. Giao diện bảng Pop-up ẩn -->
+<div id="cartModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); z-index: 9999999; align-items: center; justify-content: center; transition: all 0.3s ease;">
+  <div style="background: #ffffff; padding: 30px; border-radius: 20px; width: 90%; max-width: 440px; font-family: 'Be Vietnam Pro', Arial, sans-serif; position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.2); animation: slideUp 0.3s ease;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f4f6f5; padding-bottom: 15px; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #4a7c5d; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+        🛒 Giỏ hàng của bạn
+      </h3>
+      <span onclick="closeCart()" style="cursor: pointer; color: #aaa; font-size: 22px; font-weight: bold; transition: color 0.2s;" onmouseover="this.style.color='#ff5722'" onmouseout="this.style.color='#aaa'">×</span>
+    </div>
+    
+    <div id="cart-items-list" style="max-height: 260px; overflow-y: auto; margin: 20px 0; padding-right: 5px; scrollbar-width: thin;">
+      <p style="color: #999; text-align: center; padding: 30px 0; font-size: 14px;">Giỏ hàng của Lành đang trống trơn...</p>
+    </div>
+    
+    <div style="background: #f9fbf9; padding: 15px; border-radius: 12px; margin-top: 15px; display: flex; justify-content: space-between; align-items: center; font-size: 15px; border: 1px solid #edf2ed;">
+      <span style="color: #666; font-weight: 500;">Tạm tính:</span>
+      <span id="cart-total-price" style="color: #ee4d2d; font-weight: 700; font-size: 18px;">0 VNĐ</span>
+    </div>
+    
+    <div style="display: flex; gap: 12px; margin-top: 25px;">
+      <button onclick="closeCart()" style="flex: 1; padding: 12px; border-radius: 30px; border: 1px solid #e0e0e0; background: #ffffff; color: #666; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='#ffffff'">
+        Tiếp tục xem
+      </button>
+      <a href="https://shopee.vn/dobexinhcozy" target="_blank" style="flex: 1.4; padding: 12px; border-radius: 30px; border: none; background: linear-gradient(135deg, #ff5722, #ee4d2d); color: white; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 5px 15px rgba(238,77,45,0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 7px 20px rgba(238,77,45,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(238,77,45,0.3)';">
+        <span>Đến Shopee Mua</span>
+        <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+      </a>
+    </div>
+  </div>
 </div>
-<script>
-const elements = document.querySelectorAll('.core-item, .core-featured');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
+<style>
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+#cart-items-list::-webkit-scrollbar { width: 5px; }
+#cart-items-list::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+</style>
+
+<!-- 2. Logic điều khiển toàn bộ Giỏ hàng -->
+<script>
+// Tạo mảng lưu sản phẩm toàn cục
+if (typeof cart === 'undefined') {
+    var cart = [];
+}
+
+function addToCart(productName, price) {
+    let existingProduct = cart.find(item => item.name === productName);
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({ name: productName, price: price, quantity: 1 });
     }
-  });
-}, {
-  threshold: 0.15
-});
+    
+    // Cập nhật số hiển thị trên nút giỏ hàng
+    let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    document.getElementById("cart-count").innerText = totalItems;
+    
+    alert("Đã thêm " + productName + " vào giỏ hàng!");
+}
 
-elements.forEach(el => observer.observe(el));
-</script>
+function openCart() {
+    const modal = document.getElementById("cartModal");
+    const listContainer = document.getElementById("cart-items-list");
+    const totalPriceElement = document.getElementById("cart-total-price");
+    
+    // Ép hiện bảng lên màn hình
+    modal.style.display = "flex";
+    
+    listContainer.innerHTML = "";
+    
+    if (cart.length === 0) {
+        listContainer.innerHTML = '<p style="color: #888; text-align: center; padding: 20px 0;">Giỏ hàng đang trống trơn à!</p>';
+        totalPriceElement.innerText = "0 VNĐ";
+        return;
+    }
+    
+    let totalMoney = 0;
+    cart.forEach(item => {
+        let itemTotal = item.price * item.quantity;
+        totalMoney += itemTotal;
+        
+        let itemRow = document.createElement("div");
+        itemRow.style.cssText = "display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 14px; border-bottom: 1px dashed #eee; padding-bottom: 8px;";
+        itemRow.innerHTML = `
+            <div style="text-align: left;">
+                <strong style="color: #333;">Dầu Dừa Lành ${item.name}</strong><br>
+                <span style="color: #666;">${item.price.toLocaleString('vi-VN')}đ x ${item.quantity}</span>
+            </div>
+            <span style="color: #ee4d2d; font-weight: bold;">${itemTotal.toLocaleString('vi-VN')}đ</span>
+        `;
+        listContainer.appendChild(itemRow);
+    });
+    
+    totalPriceElement.innerText = totalMoney.toLocaleString('vi-VN') + " VNĐ";
+}
 
-<script>
-let cartCount = 0;
-
-function addToCart() {
-    cartCount++;
-    document.getElementById("cart-count").innerText = cartCount;
-    alert("Đã thêm sản phẩm vào giỏ!");
+function closeCart() {
+    document.getElementById("cartModal").style.display = "none";
 }
 </script>
 
-<script>
-const faqCards = document.querySelectorAll(".faq-card");
-
-faqCards.forEach(card => {
-    card.querySelector(".faq-question").addEventListener("click", () => {
-        card.classList.toggle("active");
-    });
-});
-</script>
 
 
 </body>
