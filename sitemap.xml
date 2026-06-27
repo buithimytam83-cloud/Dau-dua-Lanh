@@ -9,22 +9,28 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Trang Liên hệ -->
+  <!-- Giới thiệu / Câu chuyện -->
   <url>
-    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/lien he/lien he.html</loc>
+    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/Câu chuyện/cau chuyen.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Trang Câu chuyện -->
+  <!-- Sản phẩm -->
   <url>
-    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/Câu chuyện/cau chuyen.html</loc>
+    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Liên hệ -->
+  <url>
+    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/lien he/lien he.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Thêm các trang khác nếu có (ví dụ: blog, sản phẩm chi tiết...) -->
 
 </urlset>
