@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Trang chủ -->
+  <url>
+    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Trang Liên hệ -->
+  <url>
+    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/lien he/lien he.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trang Câu chuyện -->
+  <url>
+    <loc>https://buithimytam83-cloud.github.io/Dau-dua-Lanh/Câu chuyện/cau chuyen.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Thêm các trang khác nếu có (ví dụ: blog, sản phẩm chi tiết...) -->
+
+</urlset>
