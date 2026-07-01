@@ -1137,3 +1137,29 @@ position:relative;
 .faq-card.active .faq-question span {
     transform: rotate(45deg);
 }
+/* Mặc định ẩn toàn bộ câu trả lời */
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Khi câu hỏi được bấm (có class active) thì hiện câu trả lời lên */
+.faq-card.active .faq-answer {
+  display: block;
+}
+
+/* Một chút CSS cho nút câu hỏi để có hiệu ứng mượt mà */
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 15px;
+  font-weight: bold;
+  text-align: left;
+}

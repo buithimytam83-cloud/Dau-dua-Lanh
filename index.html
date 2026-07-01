@@ -420,7 +420,7 @@ nguyên chất, mang đến giải pháp chăm sóc sức khỏe và sắc đẹ
         <span>+</span>
       </button>
       <div class="faq-answer">
-        Sản phẩm có hạn sử dụng 12 tháng nếu bảo quản nơi khô ráo, tránh ánh nắng trực tiếp.
+        Sản phẩm có hạn sử dụng 18 tháng nếu bảo quản nơi khô ráo, tránh ánh nắng trực tiếp.
       </div>
     </div>
 
@@ -683,6 +683,27 @@ function openCart() {
 function closeCart() {
     document.getElementById("cartModal").style.display = "none";
 }
+</script>
+
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const faqCard = question.parentElement;
+      
+      // Bấm vào thì bật/tắt class "active" để hiển thị câu trả lời
+      faqCard.classList.toggle('active');
+      
+      // Đổi dấu + thành - và ngược lại
+      const icon = question.querySelector('span');
+      if (faqCard.classList.contains('active')) {
+        icon.textContent = '−';
+      } else {
+        icon.textContent = '+';
+      }
+    });
+  });
 </script>
 
 
